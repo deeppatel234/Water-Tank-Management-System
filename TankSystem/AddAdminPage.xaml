@@ -1,0 +1,65 @@
+﻿<Window x:Class="TankSystem.AddAdminPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TankSystem"
+        mc:Ignorable="d"
+        Title="AddAdminPage" WindowState="Maximized">
+
+    <Grid Background="#FFC15800">
+        
+        <TextBlock Text="Water Tank Management System" Grid.Row="0" FontSize="70" Margin="10,10,0,0"  HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe WP Light"/>
+        
+        
+        <Grid Height="440" Width="500" Background="#FFF0F0F0" Margin="0,150,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <ScrollViewer Grid.Row="2" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="First Name" Grid.Row="0" FontSize="15" Margin="50,0,0,0" VerticalAlignment="Bottom" FontFamily="Microsoft JhengHei UI Light" />
+                    <TextBox Name="firstnameinput" Grid.Row="1" Margin="50,0,0,0" Height="23"  Width="250" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Microsoft JhengHei" FontSize="13"/>
+
+                    <TextBlock Text="Last Name" Grid.Row="2" FontSize="15" Margin="50,0,0,0" VerticalAlignment="Bottom" FontFamily="Microsoft JhengHei UI Light" />
+                    <TextBox Name="lastnameinput" Grid.Row="3" Margin="50,0,0,0" Height="23"  Width="250" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Microsoft JhengHei" FontSize="13"/>
+
+                    <TextBlock Text="Admin Username" Grid.Row="4" FontSize="15" Margin="50,0,0,0" VerticalAlignment="Bottom" FontFamily="Microsoft JhengHei UI Light" />
+                    <TextBox Name="adminUserNameInput" Grid.Row="5" Margin="50,0,0,0" Height="23"  Width="250" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Microsoft JhengHei" FontSize="13"/>
+
+                    <TextBlock Text="Admin Password" Grid.Row="6" FontSize="15" Margin="50,0,0,0" VerticalAlignment="Bottom" FontFamily="Microsoft JhengHei UI Light" />
+                    <PasswordBox Name="adminPasswordInput" Grid.Row="7" Margin="50,0,0,0" Height="23"  Width="250" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                    <TextBlock Text="Product Key (25-Charecter)" Grid.Row="8" FontSize="15" Margin="50,0,0,0" VerticalAlignment="Bottom" FontFamily="Microsoft JhengHei UI Light" />
+                    <TextBox Name="productkeyinput" Grid.Row="9" Margin="50,0,0,0" Height="23"  Width="250" HorizontalAlignment="Left" VerticalAlignment="Center"  FontFamily="Microsoft JhengHei" FontSize="13"/>
+
+                    <Button Name="AddAdminBtn" VerticalAlignment="Center" Content="Add Admin" Grid.Row="10"  Margin="50,0,0,0" Width="80" Height="28" HorizontalAlignment="Left" Background="#FF0C63B9" BorderBrush="{x:Null}" Foreground="White" Style="{DynamicResource MyButton}" Click="AddAdminBtn_Click"  />
+                </Grid>
+            </ScrollViewer>
+
+            <TextBlock Text="Add Admin User" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft JhengHei UI Light" />
+            <Line Grid.Row="1" X1="0" X2="600" Y1="0" Y2="0" Stroke="#FF979494" StrokeThickness=".5" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        
+        </Grid>
+        
+    </Grid>
+
+</Window>

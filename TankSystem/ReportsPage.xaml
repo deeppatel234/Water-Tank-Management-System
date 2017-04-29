@@ -1,0 +1,45 @@
+﻿<Window x:Class="TankSystem.ReportsPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TankSystem"
+        mc:Ignorable="d"
+        Title="ReportsPage" Height="600" Width="950" >
+
+    <Grid Background="#FFC15800">
+        <Grid Height="500" Width="850" Background="#FFF0F0F0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Reports" VerticalAlignment="Bottom" FontSize="50" />
+            <Line X1="0" X2="5000" Stroke="Black" Grid.Row="1" StrokeThickness="1" Margin="0,5,0,0"/>
+
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Dowanload All Dates Report" FontSize="25" Margin="50,0,0,0"/>
+                <Button x:Name="usagebtn" Grid.Row="0" Content="Usage Report Download" Margin="50,20,0,0"  Width="150" Height="28" HorizontalAlignment="Left" Background="#FF0C63B9" BorderBrush="{x:Null}" Foreground="White" Style="{DynamicResource MyButton}" Click="usagebtn_Click" />
+
+                <StackPanel Grid.Row="1">
+                    <TextBlock Text="Reports by Date" FontSize="25" Margin="50,0,0,0"/>
+                    <DatePicker Name="startdate"  Width="150" Margin="50,20,0,0" HorizontalAlignment="Left"/>
+                    <DatePicker Name="enddate" Width="150" Margin="50,20,0,0" HorizontalAlignment="Left"/>
+                    <Button x:Name="filterbtn" Grid.Row="0" Content="Usage Report Download" Margin="50,20,0,0"  Width="150" Height="28" HorizontalAlignment="Left" Background="#FF0C63B9" BorderBrush="{x:Null}" Foreground="White" Style="{DynamicResource MyButton}" Click="dateusagebtn_Click"/>
+                </StackPanel>
+            
+            </Grid>
+            
+
+
+        </Grid>
+    </Grid>
+
+</Window>

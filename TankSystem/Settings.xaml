@@ -1,0 +1,123 @@
+﻿<Window x:Class="TankSystem.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TankSystem"
+        mc:Ignorable="d"
+        Title="Settings" WindowState="Maximized">
+    
+    <Grid Background="#FFC15800">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Name="SignUpGrid" Width="0"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid Grid.Column="1" Height="500" Width="850" Background="#FFF0F0F0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Settings" Grid.Row="0" FontSize="33" Margin="10,10,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontFamily="Segoe WP Light"/>
+            <Line Grid.Row="1" X1="0" X2="1500" Y1="0" Y2="0" Stroke="#FF535151" StrokeThickness=".5" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+            <DockPanel Grid.Row="2" Margin="20,0,0,0">
+                <TextBlock Text="Tenk 1 : " Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" FontFamily="Segoe WP Light" />
+                <TextBlock Text="Min Water Level" Margin="20,0,0,0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+                <TextBox  Name="m1_min" Width="60"  Margin="20,0,0,0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+                <TextBlock Text="Max  Water Level" Margin="-214,40,0,0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+                <TextBox Name="m1_max"  Width="60" Margin="-60,40,0,0"  Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+            </DockPanel>
+
+            <DockPanel Grid.Row="3" Margin="20,0,0,0">
+                <TextBlock Text="Tenk 2 : " Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" FontFamily="Segoe WP Light" />
+                <TextBlock Text="Min Water Level" Margin="20,0,0,0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+                <TextBox  Name="m2_min" Width="60"  Margin="20,0,0,0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+                <TextBlock Text="Max  Water Level" Margin="-214,40,0,0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+                <TextBox Name="m2_max"  Width="60" Margin="-60,40,0,0"  Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+            </DockPanel>
+
+            <DockPanel Grid.Row="4" Margin="20,0,0,0">
+                <TextBlock Text="Tenk 1 : " Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" FontFamily="Segoe WP Light" />
+                <TextBlock Text="Height" Margin="20,0,0,0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+                <TextBox Name="Tank1Height"  Width="60"  Margin="20,0,0,0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+                <TextBlock Text="Capecity" Margin="-137,40,0,0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+                <TextBox Name="Tank1Capecity"  Width="60" Margin="-60,40,0,0"  Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+            </DockPanel>
+
+            <DockPanel Grid.Row="5" Margin="20,0,0,0">
+                <TextBlock Text="Tenk 2 : " Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" FontFamily="Segoe WP Light" />
+                <TextBlock Text="Height" Margin="20,0,0,0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+                <TextBox Name="Tank2Height"  Width="60"  Margin="20,0,0,0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+                <TextBlock Text="Capecity" Margin="-137,40,0,0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+                <TextBox Name="Tank2Capecity"  Width="60" Margin="-60,40,0,0"  Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe WP Light" />
+            </DockPanel>
+
+            <Button Content="Save" Background="#FF0E5BA8" Foreground="White" Name="save" Grid.Row="6" Width="60" Height="25" Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="setting_save" Style="{DynamicResource MyButton}" />
+            <Button x:Name="CancelBtn" Content="Cancel" Background="#FF0E5BA8" Foreground="White"  Grid.Row="6" Width="60" Height="25" Margin="100,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="CancelBtn_Click" Style="{DynamicResource MyButton}" />
+            <Button Content="Add User" Name="AddUserBtn" Background="#FF0E5BA8" Foreground="White"  Grid.Row="6" Width="60" Height="25" Margin="180,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="AddUserBtn_Click" Style="{DynamicResource MyButton}" />
+
+         </Grid>
+
+
+        <Grid Grid.Column="0" Width="430" Background="#FFF0F0F0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="sign up" Grid.Row="1" FontSize="52" FontFamily="Segoe WP Light" Margin="50,0,0,0" />
+
+            <ScrollViewer Grid.Row="3" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Personal Information" Grid.Row="0" Grid.Column="0" FontSize="17" Margin="50,0,0,0" VerticalAlignment="Bottom" FontFamily="Microsoft JhengHei UI Light" />
+                    <Line Grid.Row="1" X1="30" X2="400" Y1="0" Y2="0" Stroke="#FF7A7676" StrokeThickness=".5" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+
+                    <TextBlock  Text="First Name" Grid.Row="2" Grid.Column="0" FontSize="15" Margin="50,0,0,0" VerticalAlignment="Center" FontFamily="Microsoft JhengHei UI Light" />
+                    <TextBox Name="FirstNameTxt" Grid.Row="2"  Height="23"  Width="200" Margin="170,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                    <TextBlock Text="Last Name" Grid.Row="3" FontSize="15" Margin="50,0,0,0" VerticalAlignment="Center" FontFamily="Microsoft JhengHei UI Light" />
+                    <TextBox x:Name="LastNameTxt" Grid.Row="3" Height="23"  Width="200" Margin="170,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+      
+                    <TextBlock Text="Sign in  Information" Grid.Row="4" Grid.Column="0" FontSize="17" Margin="50,0,0,0" VerticalAlignment="Bottom" FontFamily="Microsoft JhengHei UI Light" />
+                    <Line Grid.Row="5" X1="30" X2="400" Y1="0" Y2="0" Stroke="#FF7A7676" StrokeThickness=".5" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+                    <TextBlock Text="Username" Grid.Row="6" FontSize="15" Margin="50,5,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei UI Light" />
+                    <TextBox x:Name="UserNameTxt" Grid.Row="6" Height="23"  Width="200" Margin="170,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                    <TextBlock Text="Password" Grid.Row="7" FontSize="15" Margin="50,5,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei UI Light" />
+                    <PasswordBox x:Name="PasswordTxt" Grid.Row="7" Height="23"  Width="200" Margin="170,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                    <Button x:Name="SingUPDetails" Grid.Row="8" Content="Sign Up" Margin="50,0,0,0" Width="80" Height="28" HorizontalAlignment="Left" Background="#FF0C63B9" BorderBrush="{x:Null}" Foreground="White" Style="{DynamicResource MyButton}" Click="SingUPDetails_Click" />
+                    <Button x:Name="BackBtn" Grid.Row="8" Content="Back" Margin="150,0,0,0" Width="80" Height="28" HorizontalAlignment="Left" Background="#FF0C63B9" BorderBrush="{x:Null}" Foreground="White" Style="{DynamicResource MyButton}" Click="BackBtn_Click" />
+
+                </Grid>
+            </ScrollViewer>
+
+        </Grid>
+
+    </Grid>
+    
+</Window>
